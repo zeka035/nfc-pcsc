@@ -22,6 +22,9 @@
     "type": "git",
     "url": "https://github.com/zeka035/nfc-pcsc.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "author": {
     "name": "Martin Endler",
@@ -50,7 +53,7 @@
     "test": "cross-env NODE_ENV=test ava test/tests.js --verbose"
   },
   "dependencies": {
-    "@zeka035/pcsclite": "^0.6.0"
+    "@zeka035/pcsclite": "github:zeka035/node-pcsclite"
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
